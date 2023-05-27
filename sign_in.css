@@ -1,0 +1,809 @@
+.container {
+    display: grid;
+    width: 100%;
+    gap: 5px;
+    margin: auto;
+    grid-template-rows: 100px 50px 30px 800px 100px;
+    grid-template-areas:
+        'head'
+        'head_link'
+        'main_link'
+        'main_panel'
+        'footer'
+    ;
+}
+
+.container>div {
+    border: 1px solid white;
+}
+
+.head {
+    padding: 3.2rem;
+    grid-area: head;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* height: 100%; */
+    width: 16rem;
+    /* margin-left: 50px; */
+}
+
+.logo img {
+    width: 100%;
+}
+
+#timkiem {
+    /* margin-left: ; */
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    position: relative;
+    /* justify-content: space-around; */
+}
+
+#search {
+    
+    width: 100%;
+
+    border-radius: 10px;
+    padding:.6rem 1.2rem;
+    border: 1px solid #cdcdcd;
+    /* position: relative; */
+
+}
+
+#button1 {
+    right: 0;
+    border-radius: 10px;
+    border: 0px solid #cdcdcd;
+    background-color: white;
+    color: black;
+    position: absolute;
+    margin-right: 50px;
+}
+
+.cart a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart {
+    /* margin-left: 42%; */
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.user a {
+    color: black;
+    text-decoration: none;
+}
+
+.user {
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.vietnam {
+    width: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.head_link
+{
+    grid-area: head_link;
+    
+   
+}
+.menu 
+{
+    background-color: white;
+    padding: 15px;
+}
+  
+.menu ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu li 
+{
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+  
+.menu li a 
+{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Roboto",sans-serif;
+    padding: 5px 5px;
+}
+  
+.menu li a:hover 
+{
+    color: red;
+   
+}
+  
+.submenu 
+{
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+
+    height: 150px;
+    width: 150px;
+  
+}
+.submenu li
+{
+    width: 150px;
+    padding: 2px;
+}
+
+ 
+.menu li:hover .submenu 
+{
+    display: block; 
+}
+
+.submenu1
+{
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 150px;
+    width: 110px;
+}
+.submenu1 li
+{
+    width: 110px;
+    margin: 2px;
+
+}
+.menu li:hover .submenu1
+{
+    display: block;
+    
+}
+.submenu2
+{
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 150px;
+    width: 120px;
+}
+.submenu2 li
+{
+    width: 120px;
+    margin: 2px;
+
+}
+.menu li:hover .submenu2
+{
+    display: block;
+    
+}
+.submenu3
+{
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 200px;
+    width: 180px;
+}
+.submenu3 li
+{
+    width: 180px;
+    margin: 2px;
+}
+.menu li:hover .submenu3
+{
+    display: block;
+    
+}
+.submenu4
+{
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 100px;
+    width: 180px;
+}
+.submenu4 li
+{
+    width: 180px;   
+    margin: 2px;
+}
+.menu li:hover .submenu4
+{
+    display: block;
+    
+}
+
+.main_link
+{
+    grid-area: main_link;
+    background-color: #cdcdcd;
+    padding: 5px;
+    padding-left: 20px;
+    
+}
+.main_panel
+{
+    grid-area: main_panel;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.mySlides 
+{
+    display:none;
+    width:100%;
+    height: 700px;
+}
+#border1
+{
+    margin-top: 20px;
+    
+    padding:30px;
+    width: 380px;
+    height: 600px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 1px 5px 5px #aaaaaa
+}
+#Google
+{
+    margin: auto;
+    display: flex;   
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    background-color:dodgerblue;
+    
+}
+#Google a
+{
+    text-decoration: none;
+    color: white;
+}
+#logo_image 
+{
+    width: 40px;
+    padding-right: 10px;
+    float: left;
+}
+#Apple
+{
+   margin:auto;
+    display: flex;   
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    background-color:white;
+    padding: 1px;
+    margin-top: 10px;
+    border: 1px solid black;
+    
+}
+#Apple a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+#logo_apple
+{
+   padding-left: 10px;
+    width: 20px;
+    padding-right: 10px;
+    float: left;
+}
+#name
+{
+   padding-left: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 40px;
+}
+#passwd
+{
+    padding-left: 10px;
+    width: 350px;
+    margin: 10px;
+    height: 40px;
+}
+#submit
+{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#reset a
+{
+    text-decoration: none;
+    color: dodgerblue;  
+          
+}
+#reset 
+{
+    text-align: center;
+}
+.footer
+{
+    grid-area: footer;
+}
+
+
+
+.menu_pad {
+    display: none;
+}
+
+.button_pad {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .container {
+        display: grid;
+        width: 100%;
+        gap: 5px;
+        margin: auto;
+        grid-template-rows: 100px 30px 800px 100px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'head'
+            'main_link'
+            'main_panel'
+            'footer'
+        ;
+    }
+
+    .logo {
+        display: flex;
+        width: 70%;
+        margin-left: 60px;
+    }
+
+    .head {
+        padding: initial;
+    }
+
+    .head_link {
+        display: none;
+        
+    }
+
+    .menu_pad {
+        display: block;
+        position: relative;
+        padding-bottom: 10px;
+
+
+    }
+
+    .menu_pad li a:hover {
+        color: red;
+
+    }
+
+    
+
+    .menu_pad li {
+        list-style-type: none;
+    }
+
+    .menu_pad ul {
+        margin-left: -25px;
+        margin-top: 40px;
+
+    }
+
+    .button_menu {
+        width: 200px;
+        height: 400px;
+        display: none;
+        left: 50px;
+        background-color: #f2f2f2;
+        top: 30px;
+        position: absolute;
+
+    }
+
+    .button_menu li {
+        list-style-type: none;
+        margin-left: -35px;
+        padding-top: 10px;
+
+
+    }
+
+    .button_menu a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu_pad:hover .button_menu {
+        display: block;
+
+    }
+
+    .submenu {
+        top: 25px;
+        left: calc(100% + 25px);
+        position: absolute;
+        background-color: #f2f2f2;
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu {
+        display: block;
+
+    }
+
+    .submenu1 {
+        top: 60px;
+        left: calc(100% + 25px);
+        height: auto;
+        position: absolute;
+        background-color: #f2f2f2;
+    }
+
+    .button_menu li:hover .submenu1 {
+        display: block;
+
+    }
+
+    .submenu2 {
+        top: 90px;
+
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu2 {
+        display: block;
+
+    }
+
+    .submenu3 {
+        top: 155px;
+
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu3 {
+        display: block;
+
+    }
+
+    .submenu4 li {
+        width: 300px;
+    }
+
+    .submenu4 {
+        top: 280px;
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+        width: auto;
+    }
+
+    .button_menu li:hover .submenu4 {
+        display: block;
+
+    }
+
+    #timkiem {
+        display: none;
+    }
+
+    .button_pad {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: 40px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    #button_search {
+
+        width: 100%;
+        height: 30px;
+
+    }
+
+    #search {
+        display: none;
+    }
+
+    .cart {
+        margin-left: 10px;
+    }
+
+    .user {
+        margin-left: 10px;
+    }
+
+    .vietnam {
+        margin-left: 15px;
+    }
+
+    .mySlides {
+       
+        width: 100%;
+
+    }
+    .main_link
+    {
+        width: 100%;
+    }
+    
+   
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: grid;
+        width: 100%;
+        gap: 5px;
+        margin: auto;
+        grid-template-rows: 100px 30px 800px 100px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'head'
+            'main_link'
+            'main_panel'
+            'footer'
+        ;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .head {
+        padding: initial;
+    }
+
+    .head_link {
+        display: none;
+        
+    }
+
+    .menu_pad {
+        display: block;
+        position: relative;
+        padding-bottom: 20px;
+
+
+    }
+
+    .menu_pad li a:hover {
+        color: red;
+
+    }
+
+    
+
+    .menu_pad li {
+        list-style-type: none;
+    }
+
+    .menu_pad ul {
+        margin-left: -25px;
+        margin-top: 40px;
+
+    }
+
+    .button_menu {
+        width: 200px;
+        height: 400px;
+        display: none;
+        left: 50px;
+        background-color: #f2f2f2;
+        top: 30px;
+        position: absolute;
+
+    }
+
+    .button_menu li {
+        list-style-type: none;
+        margin-left: -35px;
+        padding-top: 10px;
+
+
+    }
+
+    .button_menu a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu_pad:hover .button_menu {
+        display: block;
+
+    }
+
+    .submenu {
+        top: 25px;
+        left: calc(100% + 25px);
+        position: absolute;
+        background-color: #f2f2f2;
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu {
+        display: block;
+
+    }
+
+    .submenu1 {
+        top: 60px;
+        left: calc(100% + 25px);
+        height: auto;
+        position: absolute;
+        background-color: #f2f2f2;
+    }
+
+    .button_menu li:hover .submenu1 {
+        display: block;
+
+    }
+
+    .submenu2 {
+        top: 90px;
+
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu2 {
+        display: block;
+
+    }
+
+    .submenu3 {
+        top: 155px;
+
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+    }
+
+    .button_menu li:hover .submenu3 {
+        display: block;
+
+    }
+
+    .submenu4 li {
+        width: 300px;
+    }
+
+    .submenu4 {
+        top: 280px;
+        position: absolute;
+        background-color: #f2f2f2;
+        left: calc(100% + 25px);
+        height: auto;
+        width: auto;
+    }
+
+    .button_menu li:hover .submenu4 {
+        display: block;
+
+    }
+
+    #timkiem {
+        display: none;
+    }
+
+    .button_pad {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: 40px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    #button_search {
+
+        width: 100%;
+        height: 30px;
+
+    }
+
+    #search {
+        display: none;
+    }
+
+    
+
+    .mySlides {
+       
+        width: 100%;
+
+    }
+    .main_link
+    {
+        width: 100%;
+    }
+    
+   
+    .cart {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .user {
+        margin-left: -30px;
+        margin-top: 20px;
+        
+    }
+
+    .vietnam {
+        margin-left: 0px;
+        margin-top: 20px;
+    
+    }
+
+    .mySlides {
+        height: 100%;
+        width: 100%;
+
+    }
+    #word_giohang
+    {
+        display: none;
+    }
+    #word_taikhoan
+    {
+        display: none;
+    }
+}
+
